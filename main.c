@@ -10,5 +10,6 @@ int main(int   argc, char *argv[])
 			//oops
 		}
 		printf("\n\n[%s]\n\n", certificado);
+		int a = atoi(argv[2]);
   }
 }
