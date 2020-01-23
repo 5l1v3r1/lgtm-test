@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(int   argc, char *argv[])
 {
@@ -12,7 +13,7 @@ int main(int   argc, char *argv[])
 		}
 		printf("\n\n[%s]\n\n", certificado);
 		int a = atoi(argv[2]);
-		if (sprintf(comando, "/usr/spei/scripts/check_mysql %s", argv[0]) < 0) {
+		if (sprintf(comando, "check_mysql %s", argv[0]) < 0) {
 			//?
 		}
 		int ret_val = system(comando);
