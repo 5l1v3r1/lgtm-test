@@ -11,6 +11,10 @@ int main(int   argc, char *argv[])
 		if (sprintf(certificado, "%s", argv[3]) < 0) {
 			//oops
 		}
+		char *fmt = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%s";
+		if (sprintf(certificado, fmt, argv[3]) < 0) {
+			//oops
+		}
 		printf("\n\n[%s]\n\n", certificado);
 		int a = atoi(argv[2]);
 		if (sprintf(comando, "check_mysql %s", argv[0]) < 0) {
